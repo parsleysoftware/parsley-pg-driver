@@ -1,3 +1,5 @@
+lazy val `parsley-pg-driver` = project in file(".")
+
 name := "parsley-pg-driver"
 
 version := "1.0"
