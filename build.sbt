@@ -2,6 +2,8 @@ lazy val `parsley-pg-driver` = project in file(".")
 
 name := "parsley-pg-driver"
 
+scalaVersion := "2.11.8"
+
 updateOptions := updateOptions.value.withCachedResolution(true)
 
 libraryDependencies ++= Seq(
