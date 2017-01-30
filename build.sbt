@@ -5,6 +5,6 @@ name := "parsley-pg-driver"
 updateOptions := updateOptions.value.withCachedResolution(true)
 
 libraryDependencies ++= Seq(
-  "com.github.tminglei" %% "slick-pg" % "0.14.5",
-  "com.github.tminglei" %% "slick-pg_joda-time" % "0.14.5"
+  "com.github.tminglei" %% "slick-pg" % "0.15.0-M3",
+  "com.github.tminglei" %% "slick-pg_joda-time" % "0.15.0-M3"
 )
