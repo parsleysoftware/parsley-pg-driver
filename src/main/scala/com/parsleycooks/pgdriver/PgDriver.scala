@@ -1,8 +1,12 @@
 package com.parsleycooks.pgdriver
 
-import com.github.tminglei.slickpg.{ExPostgresProfile, PgArraySupport, PgDate2Support}
+import com.github.tminglei.slickpg.{ExPostgresProfile, PgArraySupport, PgDate2Support, PgEnumSupport}
 
-trait PgDriver extends ExPostgresProfile with PgDate2Support with PgArraySupport {
+trait PgDriver extends ExPostgresProfile
+    with PgDate2Support
+    with PgArraySupport
+    with PgEnumSupport
+{
   override val api = new API with DateTimeImplicits with ArrayImplicits with SimpleArrayPlainImplicits
 }
 
