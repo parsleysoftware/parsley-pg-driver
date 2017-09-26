@@ -7,7 +7,8 @@ trait PgDriver extends ExPostgresProfile
     with PgArraySupport
     with PgEnumSupport
 {
-  override val api = new API with DateTimeImplicits with ArrayImplicits with SimpleArrayPlainImplicits
+  trait PgDriverAPI extends API with DateTimeImplicits with ArrayImplicits with SimpleArrayPlainImplicits
+  override val api = new PgDriverAPI {}
 }
 
 object PgDriver extends PgDriver
