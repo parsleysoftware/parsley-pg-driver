@@ -2,7 +2,7 @@ lazy val `parsley-pg-driver` = project in file(".")
 
 name := "parsley-pg-driver"
 
-scalaVersion := "2.12.2"
+scalaVersion := "2.11.8"
 
 updateOptions := updateOptions.value.withCachedResolution(true)
 
