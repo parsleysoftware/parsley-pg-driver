@@ -28,3 +28,9 @@ server.pid
 /.sbt
 /.bash_history
 /.scala_history
+/.bloop
+/.metals
+/project/.bloop
+/project/metals.sbt
+/.vscode
+/.bsp
