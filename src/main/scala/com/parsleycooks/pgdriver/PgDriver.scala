@@ -12,8 +12,8 @@ trait PgDriver extends ExPostgresProfile
     with PgHStoreSupport
     with PgPlayJsonSupport
 {
-  trait PgDriverAPI extends API
-    with DateTimeImplicits
+  trait PgDriverAPI extends ExtPostgresAPI
+    with Date2DateTimeImplicitsDuration
     with ArrayImplicits
     with SimpleArrayPlainImplicits
     with HStoreImplicits
