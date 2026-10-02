@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
 )
 
 // play-json (via slick-pg_play-json) brings Jackson 2.14.x, which has open CVEs; the modules must stay on one version.
-val jacksonVersion = "2.18.10"
+val jacksonVersion = "2.18.11"
 dependencyOverrides ++= Seq(
   "com.fasterxml.jackson.core" % "jackson-core" % jacksonVersion,
   "com.fasterxml.jackson.core" % "jackson-databind" % jacksonVersion,
